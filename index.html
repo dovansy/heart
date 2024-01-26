@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC>
-<link rel="stylesheet" href="styles.css" />
+<!DOCTYPE html PUBLIC> <link rel="stylesheet" href="styles.css" />
+<script src="https://www.w3schools.com/lib/w3.js"></script>
 <html>
   <head>
     <title>I Love You</title>
@@ -59,7 +59,7 @@
         color: #ffffff;
         z-index: 1000000000000000000000;
         margin: 40px;
-        font-size: 24px;
+        font-size: 36px;
       "
     >
       Music
@@ -67,6 +67,7 @@
     <audio id="myAudio" style="visibility: hidden" loop>
       <source src="i-love-you-3000.mp3" type="audio/mp3" />
     </audio>
+
     <div class="sp-container">
       <div class="sp-content">
         <div class="sp-globe"></div>
@@ -85,7 +86,17 @@
     <canvas id="pinkboard">
       <canvas id="pinkboard"> </canvas>
     </canvas>
+
+    <div style="width: auto; height: 100vh; display: flex; justify-content: center;">
+      <img class="nature" src="3.jpg" height="100%" />
+      <img class="nature" src="2.jpg" height="100%" />
+      <img class="nature" src="1.jpg" height="100%" />
+      <img class="nature" src="5.jpg" height="100%" />
+      <img class="nature" src="6.jpg" height="100%" />
+    </div>
+
     <script>
+      w3.slideshow(".nature", 3000);
       document
         .getElementById("playButton")
         .addEventListener("click", function () {
