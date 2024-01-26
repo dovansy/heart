@@ -51,6 +51,22 @@
   </head>
 
   <body>
+    <div
+      id="playButton"
+      style="
+        position: absolute;
+        cursor: pointer;
+        color: #ffffff;
+        z-index: 1000000000000000000000;
+        margin: 40px;
+        font-size: 24px;
+      "
+    >
+      Music
+    </div>
+    <audio id="myAudio" style="visibility: hidden" loop>
+      <source src="i-love-you-3000.mp3" type="audio/mp3" />
+    </audio>
     <div class="sp-container">
       <div class="sp-content">
         <div class="sp-globe"></div>
@@ -69,6 +85,13 @@
     <canvas id="pinkboard">
       <canvas id="pinkboard"> </canvas>
     </canvas>
+    <script>
+      document
+        .getElementById("playButton")
+        .addEventListener("click", function () {
+          document.getElementById("myAudio").play();
+        });
+    </script>
     <script>
       /*
        * Settings
